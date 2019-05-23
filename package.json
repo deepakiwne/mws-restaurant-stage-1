@@ -1,0 +1,29 @@
+{
+  "name": "mws-restaurant-stage-1",
+  "version": "1.0.0",
+  "description": "Restaurant Review App",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepakiwne/mws-restaurant-stage-1.git"
+  },
+  "author": "Deepa Kiwne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepakiwne/mws-restaurant-stage-1/issues"
+  },
+  "homepage": "https://github.com/deepakiwne/mws-restaurant-stage-1#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-pngquant": "^1.0.12",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "imagemin-pngquant": "^7.0.0"
+  }
+}
