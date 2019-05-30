@@ -13,11 +13,13 @@ gulp.task(
 	['copy-html', 'copy-images', 'styles', 'scripts', 'copy-data'],
 	async function() {
 		gulp.watch('css/**/*.css', ['styles']);
+		gulp.watch('js/**/*.js', ['scripts']);
 		gulp.watch('index.html', ['copy-html']);
 		gulp.watch('restaurant.html', ['copy-html']);
 		gulp.watch('./dist/index.html').on('change', browserSync.reload);
 		gulp.watch('./dist/restaurant.html').on('change', browserSync.reload);
 		gulp.watch('./dist/css/styles.css').on('change', browserSync.reload);
+		gulp.watch('./dist/js/**/*/js').on('change', browserSync.reload);
 
 		browserSync.init({
 			server: './dist',
