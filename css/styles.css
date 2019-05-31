@@ -145,6 +145,8 @@ nav h1 a {
 #restaurants-list li {
   background-color: #fff;
   border: 2px solid #ccc;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
   font-family: Arial,sans-serif;
   margin: 15px;
   min-height: 380px;
@@ -223,6 +225,8 @@ nav h1 a {
   line-height: 1.1;
 }
 #restaurant-img {
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
 	width: 100%;
 }
 #restaurant-address {
