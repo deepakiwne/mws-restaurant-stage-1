@@ -14,12 +14,14 @@ gulp.task(
 	async function() {
 		gulp.watch('css/**/*.css', ['styles']);
 		gulp.watch('js/**/*.js', ['scripts']);
+		gulp.watch('sw.js', ['scripts']);
 		gulp.watch('index.html', ['copy-html']);
 		gulp.watch('restaurant.html', ['copy-html']);
 		gulp.watch('./dist/index.html').on('change', browserSync.reload);
 		gulp.watch('./dist/restaurant.html').on('change', browserSync.reload);
 		gulp.watch('./dist/css/styles.css').on('change', browserSync.reload);
 		gulp.watch('./dist/js/**/*/js').on('change', browserSync.reload);
+		gulp.watch('./dist/sw.js').on('change', browserSync.reload);
 
 		browserSync.init({
 			server: './dist',
@@ -41,6 +43,9 @@ gulp.task('scripts', async function() {
 	gulp
 		.src('js/**/*.js')
 		.pipe(gulp.dest('dist/js'));
+	gulp
+		.src(['sw.js'])
+		.pipe(gulp.dest('dist'));
 });
 
 gulp.task('scripts-dist', async function() {
@@ -49,6 +54,9 @@ gulp.task('scripts-dist', async function() {
 		.pipe(sourcemaps.init())
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('dist/js'));
+	gulp
+		.src(['sw.js'])
+		.pipe(gulp.dest('dist'));
 });
 
 gulp.task('copy-html', async function() {
