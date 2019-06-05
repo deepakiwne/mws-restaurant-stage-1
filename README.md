@@ -1,6 +1,6 @@
 # Restaurant Reviews App
 
-The app is developed with a mobile first approach and is fully responsive across all modern desktop, tablet, and phone browsers. The responsivenes of the app is designed using vanilla javascript. The app uses the Service Workers Web API to to provide effective offline experience for users.
+The app is developed with a mobile first approach and is fully responsive across all modern desktop, tablet, and phone browsers. The responsivenes of the app is designed using vanilla javascript. The app uses the Service Worker Web API and Cache Web API to provide effective offline experience for users. The app also implements accessibilty features by following the a11y (https://a11yproject.com/) specifications.
 
 ## Technology Used
 
