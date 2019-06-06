@@ -184,10 +184,7 @@ createReviewHTML = (review) => {
 fillBreadcrumb = (restaurant=self.restaurant) => {
   const breadcrumb = document.getElementById('breadcrumb');
   const li = document.createElement('li');
-  const span = document.createElement('span');
-  span.setAttribute('aria-current', 'page');
-  span.innerHTML = restaurant.name;
-  li.appendChild(span);
+  li.innerHTML = restaurant.name;
   breadcrumb.appendChild(li);
 }
 

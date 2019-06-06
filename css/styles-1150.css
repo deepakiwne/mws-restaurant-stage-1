@@ -1,12 +1,6 @@
 /* ====================== Restaurant Details ====================== */
 @media screen and (min-width: 1150px) {
-
-nav {
-  height: 80px;
-}
-nav h1 {
-  padding: 23px 40px 27px;
-} 
+  
 #breadcrumb {
   width: calc(50% - 80px);
 }
