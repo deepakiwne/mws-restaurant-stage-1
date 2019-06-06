@@ -17,3 +17,10 @@ To install dependencies run the following command.
 To run the application use the following commnd and access the application at `localhost:8000`.
 
 `gulp`
+
+Have Fun!
+
+![screenshot_1](screenshot/1.png)
+![screenshot_4](screenshot/4.png)
+![screenshot_2](screenshot/2.png)
+![screenshot_3](screenshot/3.png)
